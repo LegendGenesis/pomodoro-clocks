@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="timer">
+        <div class="timer-change">
+            Длительность: <input type="number" class="timer-main_input" min="1" max="999" style="width: 50px;"></input>
+            минут
+            <br>
+            <br>
+        </div>
+    </div>
+    
+    <div>
+        <button type="submit" class="timer-change_btn">Начать</button>
+        <select class="select-time-sounds">
+            <option selected="selected">Нет</option>
+            <option value="../sounds/zvonok_malenkiy_budilnik.mp3">Цифровые часы</option>
+        </select>
+    </div>
+    <p></p>
+
+    <script type="module" src="../javascript/script.js"></script>
+</body>
+
+</html>
